@@ -10,18 +10,23 @@ function generatePassword() {
   } while (passwordLength < 8 || passwordLength > 128);
 
   // Select password criteria in prompts (lower, upper, number, and special)
+  do {
+    var confirmLower = window.confirm("Click OK to use lowercase characters in your password.");
+    var confirmUpper = window.confirm("Click OK to use uppercase characters in your password.");
+    var confirmNumbers = window.confirm("Click OK to use numbers in your password.");
+    var confirmSpecial = window.confirm("Click OK to use special characters in your password.");
+  
+    // If the user answers no for the previous password questions, a message will appear saying they need to choose at least one character type. The prompts will start over.
+    if (confirmLower === false && confirmUpper === false && confirmNumbers === false && confirmSpecial === false) {
+      window.alert("You must choose at least one character type for your password.");
+    };
+  } while (confirmLower === false && confirmUpper === false && confirmNumbers === false && confirmSpecial === false);
 
-  var confirmLower = window.confirm("Click OK to use lowercase characters in your password.");
-  var confirmUpper = window.confirm("Click OK to use uppercase characters in your password.");
-  var confirmNumbers = window.confirm("Click OK to use numbers in your password.");
-  var confirmSpecial = window.confirm("Click OK to use special characters in your password.");
-
-  // If the user answers no for the previous password questions, a message will appear saying they need to choose at least one character type. The prompts will start over.
 
   // generate password
 
   // return the password to be used in other portion of code
-}
+};
 
 
 // Get references to the #generate element

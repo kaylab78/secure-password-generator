@@ -12,6 +12,9 @@ function generatePassword() {
   // Select password criteria in prompts (lower, upper, number, and special)
 
   var confirmLower = window.confirm("Click OK to use lowercase characters in your password.");
+  var confirmUpper = window.confirm("Click OK to use uppercase characters in your password.");
+  var confirmNumbers = window.confirm("Click OK to use numbers in your password.");
+  var confirmSpecial = window.confirm("Click OK to use special characters in your password.");
 
   // If the user answers no for the previous password questions, a message will appear saying they need to choose at least one character type. The prompts will start over.
 

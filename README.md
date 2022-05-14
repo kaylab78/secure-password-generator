@@ -11,6 +11,8 @@ When the user clicks the "Generate Password" button, a series of prompts appear.
 ## Credits
 The original code for this project was cloned from Xandromus at [https://github.com/coding-boot-camp/friendly-parakeet](https://github.com/coding-boot-camp/friendly-parakeet).
 
+Thank you to class teaching assistant Chris Stallcup for his assistance during office hours on May 14. He helped me understand do-while loops and redirected my code in some spots to make my code easier to read.
+
 The wording for the license on this project is from the MIT License outlined [here](https://choosealicense.com/licenses/mit/).
 
 ## License

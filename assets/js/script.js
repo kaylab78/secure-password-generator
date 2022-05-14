@@ -22,10 +22,9 @@ function generatePassword() {
     };
   } while (confirmLower === false && confirmUpper === false && confirmNumbers === false && confirmSpecial === false);
 
+  // Generate password
 
-  // generate password
-
-  // return the password to be used in other portion of code
+  // Return the password to be used in other portion of code
 };
 
 

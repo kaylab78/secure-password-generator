@@ -23,15 +23,37 @@ function generatePassword() {
   } while (confirmLower === false && confirmUpper === false && confirmNumbers === false && confirmSpecial === false);
 
   // Generate password
-  // Use arrays to list the character options
-  var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  var specialCharacters = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "{", "}", "[", "]", "|", ";", ":", "<", ">", ".", "?"];
+  // List the character options
+  var lowercase = "abcdefghijklmnopqrstuvwxyz";
+  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numbers = "0123456789";
+  var special = "~`!@#$%^&*()-_=+{}[]|;:',<>.?";
 
-  for (var i = 8; i < passwordLength; i++) {
-    Math.floor(Math.random() * passwordLength)
+  if (confirmLower) {
+    
   }
+
+  for (var i = 8; i <= passwordLength; i++) {
+    generatePassword = Math.floor(Math.random() * passwordLength);
+  };
+
+  //array?
+  // var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  // var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  // var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  // var specialCharacters = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "{", "}", "[", "]", "|", ";", ":", "<", ">", ".", "?"];
+
+  //object?
+  // var characterOptions = [
+  //   {
+  //     lowercase: "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+  //     uppercase: "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+  //     numerical: "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+  //     special: "~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "{", "}", "[", "]", "|", ";", ":", "<", ">", ".", "?",
+  //   }
+  // ];
+
+
 
 
   // If the user wants lowercase letters in their password, the computer should include at least one lowercase letter in the password

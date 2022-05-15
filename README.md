@@ -13,7 +13,7 @@ The original code for this project was cloned from Xandromus at [https://github.
 
 Thank you to class teaching assistant Chris Stallcup for his assistance during office hours on May 14. He helped me understand do-while loops and redirected me (and my code) in some spots to make my code easier to understand.
 
-MDN Web Docs was referenced during the creation of this project—particularly their articles on array, window.prompt and window.confirm.
+*Random Password Generator using Javascript.* (2021, July 28). DEV. Retrieved May 15, 2022 from [https://dev.to/code_mystery/random-password-generator-using-javascript-6a](https://dev.to/code_mystery/random-password-generator-using-javascript-6a)
 
 The wording for the license on this project is from the MIT License outlined [here](https://choosealicense.com/licenses/mit/).
 

@@ -25,11 +25,9 @@ function generatePassword() {
   // Generate password
 
   // If the user wants lowercase letters in their password, the computer should include at least one lowercase letter in the password
-  if (confirmLower) {
-
-  } else {
-    // If they don't want to include lowercase letters, then don't include any in the password
-  }
+  do {
+    var lowercase = "abcdefghijklmnopqrstuvwxyz"
+  } while (confirmLower)
 
   // If the user wants numbers in their password, the computer should include at least one number between 0 - 9 in the password
   if (confirmNumbers) {

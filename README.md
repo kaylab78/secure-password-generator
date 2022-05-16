@@ -3,6 +3,26 @@
 ## Description
 This is a password generator. The user is able to choose how long the password is (between 8-128 characters), and they can choose if they want to include lowercase letters, uppercase letters, numbers and/or special characters in the password.
 
+This project was difficult. Coding the JavaScript for this project helped me better understand the language, and I reviewed the online lessons to remind myself how to write each piece of the function. 
+
+I was able to psuedocode the majority of the project. I knew how to ask the user for their desired password length, and I understood how to check to make sure that they met the length requirement.
+
+I understood how to ask the user if they wanted each type of character. At this point, I attended office hours on May 14, 2022, and one of the teaching assistants helped me to clean up my code using do-while loops. I apprecited learning this from him. 
+
+The last part of the project was to actually generate the password, and I didn't know how to proceed. I researched arrays and objects. I knew that I would need to use Math.random() to get a random assortment of characters, and I suspected that I had to use a for loop. But, I didn't know how these things would fit together. The examples and ideas I found in my research didn't make sense to me. They seemed more complicated than what I learned from the module.
+
+I signed up for my first session with a tutor. On May 15, 2022, Meg Meyers helped me code and understand how to generate the password.
+
+I ended up using arrays to store all of the characters that would be needed to generate the password. I created two additional blank arrays. The first is used to create a "new" set of characters to choose randomly from using the next if statements. This way whatever assortment of characters the user chooses can be easily accessed. 
+
+The second blank array holds one character of each of the types chosen by the user.
+
+Then I added a for statement to fill in the remaining characters needed to reach the password length chosen by the user.
+
+The last part of the function returns the password, which then is written into the form on the screen.
+
+I learned a lot from this project. I think the most important thing I learned is how to read JavaScript. Now I better understand how the computer reads the code I wrote.
+
 ## Installation
 In order to access this repository, the user needs to close it from GitHub using the command git clone git@github.com:kaylab78/secure-password-generator.git in their command line interface.
 
